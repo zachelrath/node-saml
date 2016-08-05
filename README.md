@@ -26,7 +26,8 @@ var options = {
       reference: "//*[local-name(.)='Issuer']",
       action: 'before'
     }
-  }
+  },
+  clockSkew: 60 // Subtracts the Issue Instant by a number of seconds
 };
 
 // SAML 1.1
