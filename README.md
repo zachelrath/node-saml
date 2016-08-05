@@ -1,6 +1,4 @@
-Create SAML assertions.
-
-NOTE: currently supports SAML 1.1 tokens
+Create SAML 1.1 and SAML 2.0 assertions.
 
 [![Build Status](https://travis-ci.org/auth0/node-saml.png)](https://travis-ci.org/auth0/node-saml)
 
@@ -31,7 +29,10 @@ var options = {
   }
 };
 
+// SAML 1.1
 var signedAssertion = saml11.create(options);
+// SAML 2.0
+var signedAssertion = saml20.create(options);
 ```
 
 Everything except the cert and key is optional.
